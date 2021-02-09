@@ -1,0 +1,40 @@
+# LEARN-JAVA
+package luyentapJAVA;
+
+import java.util.Scanner;
+
+
+public class PRACTICE {
+	public static void main(String[] args) {
+		/*
+		 * input numberOne and numberTwo
+		 * giải phương  trình bâc 2
+		 */
+		Scanner sc=new Scanner(System.in);
+		System.out.println("input any three number: ");
+		int numberOne = sc.nextInt();
+		int numberTwo= sc.nextInt();
+		int numberThree = sc.nextInt();
+		int x,x1,x2;
+		double delta= (numberTwo*numberTwo )- (4*numberOne*numberThree);
+		System.out.println("delta = " + delta);
+		
+		if(delta > 0)
+		{
+			System.out.println("phương trình có 2 nghiệm phân biệt:" + "x1 ="+ (((-numberTwo)+Math.sqrt(delta))/2) + "and x2 = "+(((-numberTwo)-Math.sqrt(delta))/2) );
+		}
+		else if (delta == 0 )
+		{
+			System.out.println("phương trình nghiệm kép x="+ -numberTwo/numberOne);
+		}
+		else 
+			{
+			System.out.println("phương trình vô ngiệm");
+			}
+		
+		
+		
+		
+	}
+
+}
