@@ -1,0 +1,27 @@
+package cuhuytien1011;
+
+import java.util.Scanner;
+
+public class switchsacac {
+	public static void main(String[] args) {
+		while(true)
+		{
+			System.out.println("Mời bạn nhap vao 1 sô");
+			int n= new Scanner(System.in).nextInt();
+			if(n%2==0)
+				System.out.println(n+"là số chẵn");
+			else
+				System.out.println(n + "là số lẽ");
+			
+			System.out.println("Bạn có muốn tiếp tục?(y/n)");
+			String line =new Scanner(System.in).nextLine();
+			
+			if(line.equalsIgnoreCase("n"))
+				break;
+			
+		}
+		System.out.println("Thoát");
+			 
+	}
+
+}
