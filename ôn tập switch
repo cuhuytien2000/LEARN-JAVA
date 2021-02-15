@@ -1,0 +1,58 @@
+package sgsdgdfd;
+
+import java.util.Scanner;
+
+public class luentapswich {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Mời bạn nhập vào 2 số");
+		System.out.println("Mời bạn nhập vào a:");
+		int a = sc.nextInt();
+		System.out.println("Mời bạn nhập vào b:");
+	    int b = sc.nextInt();
+		System.out.println("Mời bạn nhập vào kí tự:");
+		Scanner cm = new Scanner(System.in);
+		String ch = cm.nextLine();
+		int sum = a+ b;
+		int subtract = a -b;
+		int multiply = a * b;
+		int divide = a/b;
+		int divideWremain = a%b;
+		switch(ch) {
+		case "+":
+		{
+			System.out.println("Tổng của 2 số là sum ="+ sum);
+		     break;
+		}
+		case "-":
+		{
+			System.out.println("Hiệu của 2 số là sub ="+ subtract);
+		     break;
+		}
+		case "*":
+		{
+			System.out.println("Tích của 2 số là mul ="+ multiply );
+		     break;
+		}
+		case "/":
+		{
+			System.out.println("Phép chia của 2 số là div ="+ divide);
+		     break;
+		}
+		case "%":
+		{
+			System.out.println("Tổng của 2 số là divWre ="+ divideWremain);
+		     break;
+		}
+		
+		
+	}
+	}
+}
+
+
+
+
+
+
+
