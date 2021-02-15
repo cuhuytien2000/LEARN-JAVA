@@ -1,0 +1,40 @@
+	s(x,n)= x+((x^2)/(1+2))+((x^3)/(1+2+3))+...+((x^n)/(1+2+3+..+n)
+package sgsdgdfd;
+
+import java.util.Scanner;
+
+public class luentapswich {
+	public static double TinhS(int n, int x) {
+		double s = 0;
+		double mau = 0;
+		for(int i=1; i<=n;i++)
+		{
+			double tu = Math.pow(x,i );
+			
+				mau = mau +i;
+			    s = s+tu/mau;
+			
+		}
+		return s;
+	}
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+		System.out.println("Nhập x:");
+		int x= sc.nextInt();
+		System.out.println("Nhập n:");
+		int n = sc.nextInt();
+		double  s=TinhS(n, x);
+		System.out.println("S("+x+","+n+")="+s);
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
